@@ -1,0 +1,17 @@
+[Unit]
+Description=Face Identifier
+Requires=
+After=
+StartLimitIntervalSec=60
+
+[Service]
+User=pi
+Group=pi
+Type=simple
+ExecStartPre=
+ExecStart=/usr/bin/python3 /home/pi/faces/face-identifier.py --run
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

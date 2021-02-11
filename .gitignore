@@ -3,6 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# emacs tmp files
+*~
+
+# don't store passwords
+wpa_supplicant.conf
+
 # C extensions
 *.so
 
